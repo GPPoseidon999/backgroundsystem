@@ -37,7 +37,7 @@ export default class NavLeft extends Component {
                     <img src="/assets/logo.svg" alt="" />
                     <h1>System</h1>
                 </div>
-                <Menu theme="dark">{this.state.menuTreeNode}</Menu>
+                <Menu theme="light" className="menu">{this.state.menuTreeNode}</Menu>
             </div>
         );
     }
