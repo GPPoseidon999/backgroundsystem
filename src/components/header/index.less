@@ -1,4 +1,7 @@
+@import '../../style/default.less';
+
 .header{
+    background-color: @colorM;
     &-top{
         height: 60px;
         line-height: 60px;
@@ -17,6 +20,21 @@
         &-title{
             font-size: 20px;
             text-align: center;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                margin: auto;
+                top: 40px;
+                left:0;
+                right: 0;
+                bottom: 0;
+                width: 10px;
+                height: 10px;
+                border-top: 20px solid @colorM;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+            }
         }
         .weather{
             text-align: right;

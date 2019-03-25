@@ -40,7 +40,7 @@ export default class Header extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="header">
                 <Row className="header-top ">
                     <Col span={24}>
                         <span>欢迎,{this.state.userName}</span>
